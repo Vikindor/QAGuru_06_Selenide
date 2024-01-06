@@ -23,8 +23,7 @@ public class GithubEnterpriseSearch {
         open("https://github.com/");
         $(".header-menu-wrapper").$(byText("Solutions")).hover();
         $("[href='/enterprise']").click();
-        $("#hero-section-brand-heading").shouldBe(visible)
-                .shouldHave(text("The AI-powered\n" + "developer platform"));
+        $("#hero-section-brand-heading").shouldHave(text("The AI-powered\n" + "developer platform"));
     }
 
 }
